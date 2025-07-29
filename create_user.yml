@@ -1,9 +1,8 @@
 ---
   - name: create user
-    become: true
     hosts: all
     tasks:
       - name: create user
-        ansible.builtin.user:
-          name: kumar
-          state: present
+        ansible.builtin.debug:
+          msg: "Hi, I am there"
+  
